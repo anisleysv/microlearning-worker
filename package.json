@@ -1,0 +1,21 @@
+{
+  "name": "microlearning-worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Authenticated text-to-image Cloudflare Worker for Microlearning Center",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "wrangler dev",
+    "test": "node --test",
+    "check": "node --check src/index.js && node --check scripts/generate.mjs && node --check test/worker.test.js",
+    "build:check": "wrangler deploy --dry-run --outdir .local-review/build",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "miniflare": "5.20260918.0-alpha",
+    "wrangler": "4.135.0"
+  }
+}

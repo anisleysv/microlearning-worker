@@ -1,0 +1,3 @@
+# Copy to .dev.vars and replace with a random secret of at least 32 characters.
+# This is the application's secret, NOT a Cloudflare account API token.
+IMAGE_API_KEY=""
