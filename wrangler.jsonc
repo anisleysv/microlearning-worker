@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "microlearning-worker",
+  "name": "microlearning-worker-dev",
   "main": "src/index.js",
   "compatibility_date": "2026-09-19",
   "ai": { "binding": "AI", "remote": true },
